@@ -1,0 +1,135 @@
+.welcomeScreen {
+    margin-top: -350px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: visible;
+}
+
+.pokerChip {
+    max-width: fit-content;
+    margin: 5vh auto 0px auto;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.playGame {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background: lightgray;
+}
+
+#playText {
+    max-height: fit-content;
+    max-width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.enteredBet {
+    display: flex;
+    background-color: rgb(110, 110, 110);
+    border-radius: 30px;
+    border: 5px solid;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerPic {
+    max-width: 100%;
+    margin: auto;
+}
+
+.playAgainContainer {
+    background-color: gray;
+    border-radius: 50px;
+    background: radial-gradient(gray 5%, green);
+    margin-top: 1%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+}
+
+.playAgain {
+    max-width: fit-content;
+    height: 100px;
+    width: 150px;
+    border: 0px;
+    margin: -10vh 0vh 0vh 0vh;
+    background-color: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.container {
+    height: 50vh;
+    visibility: hidden;
+}
+
+html {
+    background-color: green;
+}
+
+.card {
+    height: 250px;
+    width: 175px;
+    margin: 50px 0px 0px 25px;
+    background-color: white;
+    border: black 3px solid;
+    border-radius: 15px;
+    max-height: 250px;
+}
+
+.centered {
+    max-width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playerOptions {
+    background-color: gray;
+    border-radius: 50px;
+    background: radial-gradient(gray 5%, green);
+    border: 5px black solid;
+    margin-top: 1%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playerOption {
+    margin: 5px 50px 5px 50px;
+    height: 100px;
+    width: 150px;
+    border: 0px;
+    background-color: transparent;
+    border: 1px black solid;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.cards {
+    height: 100%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+.balance {
+    float: right;
+    font-size: 25px;
+}
