@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack!</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container" id="gameScreen">
+        <div>
+            <div class="cards house" id="houseCardsVisual">
+            </div>
+            <div class="cards player" id="playerCardsVisual">
+                <h1 class="centered">House Hand: <span id="houseHandTotal"></span></h1>
+                <h1 class="centered">Player Hand: <span id="playerHandTotal"></span></h1>
+                <h1 class="centered"><span id="winLoseText"></span></h1>
+
+            </div>
+            <div class="playerOptions" id="playerOptions">
+                <button class="playerOption Hit" onclick="playerHit()"><img src="images/blackJackHit.png" border="0px" height="100%"/></button>
+                <button class="playerOption Stand" onclick="playerStand()"><img src="images/blackJackStand.png" border="0px" height="100%"/></button>
+                <button class="playerOption Double" onclick="playerDouble()"><img src="images/blackJackDouble.png" border="0px" height="100%"/></button>
+            </div>
+            <div class="playAgainContainer" id="playAgainContainer">
+                <button class="playAgain" onclick="clearGame()"><img src="images/PlayAgainButton.png" border="0px" height="100%"/></button>
+            </div>
+
+            <div>
+                <p class="balance"><b>Balance: </b>$<span id=balance2>500</span> </br> <b>Total Bet: </b>$<span id=totalBet></span></p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="welcomeScreen" id="welcomeScreen">
+        <h1 class="centered">Welcome To A Game Of Blackjack!</h1>
+        <h3 class="centered">Enter A Bet To Get Started!</h3>
+        <h3 class="centered">Your Balance: $<span id="balance">500</span></h3>
+        <button class="enteredBet" onclick="chipIn()"><img class="centerPic" id="centerPic" src=""></button>
+        <h3 class="centered">Current Bet: $<span id="betAmountLabel">0</span></h3>
+        <div class="enterBet">
+            <button class="pokerChip" id="undoButton" onclick="chipOut();"><img class="pokerChips" src="images/undoImage.png" height="100px"/></button>
+            <button class="pokerChip bal1" id="poker1" onclick="pokerChipSelected(1)"><img class="pokerChips" src="images/poker1.png" height="100px"/></button>
+            <button class="pokerChip bal5" id="poker5" onclick="pokerChipSelected(5)"><img class="pokerChips" src="images/poker5.png" height="100px"/></button>
+            <button class="pokerChip bal25" id="poker25" onclick="pokerChipSelected(25)"><img class="pokerChips" src="images/poker25.png" height="100px"/></button>
+            <button class="pokerChip bal100" id="poker100" onclick="pokerChipSelected(100)"><img class="pokerChips" src="images/poker100.png" height="100px"/></button>
+            <button class="pokerChip bal500" id="poker500" onclick="pokerChipSelected(500)"><img class="pokerChips" src="images/poker500.png" height="100px"/></button>
+            <button class="pokerChip bal1000" id="poker1000" onclick="pokerChipSelected(1000)"><img class="pokerChips" src="images/poker1000.png" height="100px"/></button>
+
+        </div>
+        <h3 class="centered">Current Chip Selected: $<span id="chipSelected">0</span></h3>          
+        <button class="playGame" onclick="changeScreen();initialDraw()"><span class="centered" id="playText"><b>Play!</b></span></button>  
+    </div>
+    <div class="runningCount">
+        <h2>Running Count: <span id="runningCount"></span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
